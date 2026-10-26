@@ -58,3 +58,17 @@ console.log(isInRange)
 
 console.log(isValidUser  ? "Accès autorisé" : "Accès refusé")
 
+
+
+// Partie 6 : || ou ?? pour une valeur par défaut
+const quantity = 0;
+console.log(quantity ?? 1);
+console.log(quantity || 1)
+
+// Partie 7 : le chaînage optionnel ?.
+
+const user = { name: 'Alice', address :{ city: 'Uccle'} }; 
+
+
+console.log (user.address?.city ?? " Ville inconnue ", );
+
