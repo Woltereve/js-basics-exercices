@@ -30,3 +30,4 @@ const user = {
 };
 console.log(user)
 // typeof ramene un objet
+
