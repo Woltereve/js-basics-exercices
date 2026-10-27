@@ -51,12 +51,18 @@ const greetArrow = (name) => {
 console.log (greetArrow("banane"));
 
 
-const globalVar = "global"
-function  testScope () {
-    
+const globalVar = "global";
 
-    return `${global ,localVar}`
+function  testScope () {
+
+   const localVar= 'local';
+   console.log (globalVar);
+   console.log (localVar);
 }
-console.log (globalVar);
-console.log (localVar)
+testScope();
+// console.log(localVar); → ReferenceError: localVar is not defined (localVar n'existe que dans la fonction)
+
+
+
+
 
