@@ -1,12 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Test JS</title>
-</head>
-<body>
-	<h1>Test</h1>
-	<script src="index.js"></script>
-	<script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercices DOM</title>
+		<style>
+			.exercise {
+				max-width: 800px;
+				margin: 0 auto 30px;
+				padding: 15px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+			}
+			.result {
+				margin-top: 10px;
+				padding: 10px;
+				background-color: #f5f5f5;
+			}
+			.highlight {
+				background-color: yellow;
+			}
+			.muted {
+				color: #999;
+			}
+			.out-of-stock {
+				color: #999;
+				text-decoration: line-through;
+			}
+		</style>
+		<script src="./script.js" type="module"></script>
+	</head>
+	<body>
+		<h1>Exercices sur le DOM</h1>
+
+		<section class="exercise" id="ex1">
+			<h2>1. Sélection</h2>
+			<div class="content">
+				<p>Premier paragraphe.</p>
+				<p class="special">Paragraphe spécial.</p>
+				<p>Dernier paragraphe.</p>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex2">
+			<h2>2. Texte</h2>
+			<div class="content">
+				<p id="change-me">Ce texte va être modifié.</p>
+				<p class="code"></p>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex3">
+			<h2>3. Attributs</h2>
+			<div class="content">
+				<a class="docs-link" href="https://developer.mozilla.org">Documentation</a>
+				<button class="send" type="button">Envoyer</button>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex4">
+			<h2>4. Classes</h2>
+			<div class="content">
+				<p class="toggle-me">Premier paragraphe à basculer.</p>
+				<p class="toggle-me highlight">Second paragraphe à basculer.</p>
+				<p class="note muted">Une note discrète.</p>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex5">
+			<h2>5. Style et visibilité</h2>
+			<div class="content">
+				<p class="box">Boîte à styliser.</p>
+				<p class="secret" hidden>Message secret révélé!</p>
+				<p class="obsolete">Ce paragraphe doit disparaître.</p>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex6">
+			<h2>6. Créer, insérer, supprimer</h2>
+			<div class="content">
+				<ul class="tasks">
+					<li>Apprendre les variables</li>
+					<li class="obsolete-task">Tâche obsolète</li>
+					<li>Apprendre les tableaux</li>
+				</ul>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex7">
+			<h2>7. Navigation et dataset</h2>
+			<div class="content">
+				<ul class="team">
+					<li data-role="dev">Alice</li>
+					<li class="current" data-role="design">Bob</li>
+					<li data-role="dev">Chloé</li>
+				</ul>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex8">
+			<h2>8. Champs de formulaire</h2>
+			<div class="content">
+				<label>Nom <input type="text" id="username" value="anonyme" /></label>
+				<label>Quantité <input type="number" id="quantity" value="3" /></label>
+			</div>
+			<div class="result"></div>
+		</section>
+
+		<section class="exercise" id="ex9">
+			<h2>9. Liste de produits</h2>
+			<div class="content">
+				<ul class="products"></ul>
+			</div>
+			<div class="result"></div>
+		</section>
+	</body>
 </html>
