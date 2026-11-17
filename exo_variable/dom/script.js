@@ -1,18 +1,27 @@
+console.log("exercice 1");
 
+const paragraphes = document.querySelectorAll("#ex1 .content p");
+console.log(`nombres de paragraphe: ${paragraphes.length}`);
 
+const special = document.querySelector("#ex1 .special");
+console.log(`cet exercice est :${special.textContent}`);
 
-const paragraphes = document.querySelectorAll('#ex1 .content p');
-console.log(paragraphes.length)
+const para = document.querySelector("#ex1 .content p");
+console.log(`il est le :${para.textContent}`);
 
+for (const p of paragraphes) {
+	console.log(p.textContent);
+}
 
+const missing = document.querySelector(`#ex1 .missing`);
+console.log(missing);
 
+console.log(missing ? "trouver" : "je ne voiss rien");
 
-const special = document.querySelector('#ex1 .special');
-console.log(special.textContent)
+console.log(paragraphes);
+console.log(Array.isArray(paragraphes));
 
-
-const para = document.querySelector('#ex1 .content p');
-console.log(para.textContent)
-
+const nodesToArray = Array.from(paragraphes);
+console.log(nodesToArray);
 
 
